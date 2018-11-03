@@ -29,7 +29,8 @@ Pics.prototype.renderPics= imageObject => {
     $main.append($picsClone)
     $picsClone.attr('id',imageObject.keyword)
     $picsClone.find('img').attr('src',imageObject.image_url)
-    $picsClone.find('p').text(imageObject.keyword)
+    $picsClone.find('h2').text(imageObject.title)
+
 
 }
 
